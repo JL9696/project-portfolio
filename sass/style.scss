@@ -15,9 +15,6 @@ body {
 
 .container {
   max-width: 1140px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
   justify-content: center;
   margin: auto;
 }
@@ -76,7 +73,7 @@ section {
   margin-left: 36px;
 }
 
-/**header**/
+/*header */
 .splash-inner {
   margin: 170px auto;
   max-width: 70%;
@@ -106,7 +103,7 @@ section {
   display: block;
   align-items: center;
   min-width: 160px;
-  margin: 24px auto 0 auto;
+  margin: 24px auto 10px auto;
   padding: 16px;
   max-width: 190px;
   font-family: Inconsolata;
@@ -198,6 +195,7 @@ section h1 {
 
 .card img {
   height: 300px;
+  width: auto;
   padding-bottom: 7px;
 }
 .portfolio {
@@ -228,8 +226,18 @@ section footer {
 
 }
 
-@media (min-width: 576px) {
+@media (max-width: 720px) {
   .page-subtitle {
-    font-size: 72px;
+    font-size: 40px;
+  }
+  
+  .page-title {
+    font-size: 25px;
+  }
+
+  .splash-inner {
+    margin: auto;
+    max-width: 70%;
+    text-align: center;
   }
 }
